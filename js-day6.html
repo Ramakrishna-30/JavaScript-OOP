@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="js-day6.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="form-heading">Add User</h1>
+        <form id="myForm">
+          <div class="mb-3">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" />
+            <p id="nameErrMsg" class="error-message"></p>
+          </div>
+          <div class="mb-3">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" id="email" />
+            <p id="emailErrMsg" class="error-message"></p>
+          </div>
+          <div class="mb-3">
+            <label for="status">Working Status</label>
+            <select id="status" class="form-control">
+              <option value="Active">Active</option>
+              <option value="Inactive">Inactive</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <h1 class="gender-field-heading">Gender</h1>
+            <input type="radio" name="gender" id="genderMale" value="Male" checked />
+            <label for="genderMale">Male</label>
+            <input type="radio" name="gender" id="genderFemale" value="Female" class="ml-2"/>
+            <label for="genderFemale">Female</label>
+          </div>
+          <button class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <br>
+    <script src="js-day6.js"></script>
+</body>
+</html>
